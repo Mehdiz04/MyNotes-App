@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if messages %}
+    {% for msg in messages %}
+        <p class='msg'> {{msg}} </p>
+    {% endfor %}
+{% endif %}
+    {% if Notes %}
+
+    <div class="notes-container">
+        {% for note in Notes %}
+        <a href="{% url 'note' note.id %}">
+        <div class="note-paper">
+            <h3 class="note-title">{{ note.Title }}</h3>
+            <p class="note-content">{{ note.content|linebreaksbr }}</p>
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+
+    {% else %}
+
+    <h3>You Don't Have Any Notes <a href="{% url 'add_note' %}">Add Note</a></h3>
+
+    {% endif %}
+
+{% endblock %}

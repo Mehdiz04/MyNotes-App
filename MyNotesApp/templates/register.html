@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form  method="POST" class="register-form">
+
+    {% csrf_token %}
+
+    {% if messages %}
+        {% for msg in messages %}
+            <p class='msg'> {{msg}} </p>
+        {% endfor %}
+    {% endif %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Register</button>
+</form>
+
+<p>Already Has An Account? <a href="{% url 'login' %}">Login</a></p>
+
+{% endblock %}

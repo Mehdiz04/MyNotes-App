@@ -1,0 +1,289 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color:rgb(125, 134, 142);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* register stuff */
+.register-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.register-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-form button {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.register-form button:hover {
+    background-color: #0070FF;
+}
+
+/* login stuff */
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.login-form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.login-form legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1E90FF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #0070FF;
+}
+
+/* add note */
+
+.note-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.note-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-form .form-group {
+    margin-bottom: 15px;
+}
+
+.note-form label {
+    font-weight: bold;
+}
+
+.note-form input[type="text"],
+.note-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.note-form button {
+    display: block;
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1E90FF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.note-form button:hover {
+    background-color: #0070FF;
+}
+
+/* notes in the home page styling */
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.note-paper {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.note-paper:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.note-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.note-content {
+    flex-grow: 1;
+}
+
+.notes-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* messages */
+
+.msg {
+    color: rgb(4, 79, 137);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* note detail view */
+
+.note-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.note-detail h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.note-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
